@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white dark:bg-gray-900 shadow-sm" : "bg-black dark:bg-black")} initial={{
+    <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm" : "bg-black dark:bg-black")} initial={{
       opacity: 1,
       y: 0
     }} animate={{
@@ -60,7 +60,7 @@ const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link to="/">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       Home
                     </NavigationMenuLink>
                   </Link>
@@ -68,14 +68,14 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <Link to="/about">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                       About Us
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
                     Learn More
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -119,7 +119,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0")}>
-        <div className={cn("px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-sm", isScrolled ? "bg-white dark:bg-gray-900" : "bg-black dark:bg-black")}>
+        <div className={cn("px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-sm", isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm" : "bg-black dark:bg-black")}>
           <Link to="/" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
