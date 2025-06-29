@@ -71,7 +71,7 @@ const LaundryFeatures = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 max-w-4xl mx-auto"
+            className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-700 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-600 max-w-4xl mx-auto"
           >
             <img 
               src="/lovable-uploads/4bb1bdae-d248-4318-9bb8-44efe0896e8f.png" 
