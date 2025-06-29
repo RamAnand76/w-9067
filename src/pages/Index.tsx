@@ -1,10 +1,9 @@
 
 import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import Projects from '@/components/Projects';
-import WhyWrlds from '@/components/WhyWrlds';
-import BlogPreview from '@/components/BlogPreview';
+import LaundryFeatures from '@/components/LaundryFeatures';
+import HowItWorks from '@/components/HowItWorks';
+import LaundryBenefits from '@/components/LaundryBenefits';
 import SEO from '@/components/SEO';
 import { useEffect } from 'react';
 
@@ -21,16 +20,15 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="WRLDS - Smart Textile Technology" 
-        description="WRLDS Technologies: Pioneering smart engineering solutions with textile sensors for sports, safety, and performance monitoring."
-        imageUrl="/lovable-uploads/526dc38a-25fa-40d4-b520-425b23ae0464.png"
-        keywords={['smart textiles', 'wearable technology', 'textile sensors', 'sports tech', 'safety monitoring', 'performance analytics', 'manufacturing']}
+        title="Go Bright - India's First All-in-One Laundry App" 
+        description="Brighten Your Day with Clean Clothes — Delivered to Your Doorstep. Find trusted local laundries, compare prices, and book pickup & delivery in one click."
+        imageUrl="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png"
+        keywords={['laundry app', 'doorstep laundry', 'laundry service', 'local laundry', 'laundry delivery', 'dry cleaning', 'India laundry']}
       />
       <Hero />
-      <Features />
-      <WhyWrlds />
-      <Projects />
-      <BlogPreview />
+      <LaundryFeatures />
+      <HowItWorks />
+      <LaundryBenefits />
     </PageLayout>
   );
 };
