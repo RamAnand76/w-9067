@@ -1,5 +1,5 @@
 
-import { Search, Compare, Calendar, Truck } from "lucide-react";
+import { Search, GitCompare, Calendar, Truck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const steps = [
@@ -9,7 +9,7 @@ const steps = [
     description: "Open the Go Bright app and instantly see verified local laundries around you with ratings and reviews."
   },
   {
-    icon: Compare,
+    icon: GitCompare,
     title: "Compare",
     description: "Browse services, compare prices, check availability, and read customer reviews to make the best choice."
   },
