@@ -6,22 +6,26 @@ const steps = [
   {
     icon: Search,
     title: "Discover",
-    description: "Open the Go Bright app and instantly see verified local laundries around you with ratings and reviews."
+    description: "Open the Go Bright app and instantly see verified local laundries around you with ratings and reviews.",
+    image: "/lovable-uploads/4bb1bdae-d248-4318-9bb8-44efe0896e8f.png"
   },
   {
     icon: GitCompare,
     title: "Compare",
-    description: "Browse services, compare prices, check availability, and read customer reviews to make the best choice."
+    description: "Browse services, compare prices, check availability, and read customer reviews to make the best choice.",
+    image: "/lovable-uploads/79ed7d65-f407-494f-9ae4-27e5b98d6b62.png"
   },
   {
     icon: Calendar,
     title: "Schedule",
-    description: "Book your preferred service, choose pickup and delivery time slots that work for your schedule."
+    description: "Book your preferred service, choose pickup and delivery time slots that work for your schedule.",
+    image: "/lovable-uploads/c7c26eba-0159-40a7-a3cc-b6abf5129b29.png"
   },
   {
     icon: Truck,
     title: "Relax",
-    description: "Track your order in real-time and enjoy fresh, clean clothes delivered right to your doorstep."
+    description: "Track your order in real-time and enjoy fresh, clean clothes delivered right to your doorstep.",
+    image: "/lovable-uploads/49850195-bd49-4fba-bdc4-65a3cb67bb44.png"
   }
 ];
 
@@ -44,7 +48,7 @@ const HowItWorks = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="text-center"
+              className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-600 hover:shadow-md transition-shadow"
             >
               <div className="relative mb-6">
                 <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -54,30 +58,17 @@ const HowItWorks = () => {
                   {index + 1}
                 </div>
               </div>
+              
+              <img 
+                src={step.image} 
+                alt={step.title} 
+                className="w-48 h-48 mx-auto mb-4 object-contain rounded-lg"
+              />
+              
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{step.title}</h3>
               <p className="text-gray-600 dark:text-gray-300">{step.description}</p>
             </motion.div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-600 max-w-4xl mx-auto"
-          >
-            <img 
-              src="/lovable-uploads/c7c26eba-0159-40a7-a3cc-b6abf5129b29.png" 
-              alt="Schedule Pickup" 
-              className="w-64 h-64 mx-auto mb-6 object-contain"
-            />
-            <h3 className="text-2xl font-bold mb-4 text-teal-600 dark:text-teal-400">Easy Scheduling</h3>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
-              Schedule your pickup and delivery with our flexible time slots. Track your order in real-time and get notified at every step.
-            </p>
-          </motion.div>
         </div>
         
         <div className="text-center mt-12">
