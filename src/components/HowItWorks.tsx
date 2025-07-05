@@ -11,9 +11,9 @@ const steps = [
   },
   {
     icon: GitCompare,
-    title: "Compare",
+    title: "Pick your service",
     description: "Browse services, compare prices, check availability, and read customer reviews to make the best choice.",
-    image: "/lovable-uploads/79ed7d65-f407-494f-9ae4-27e5b98d6b62.png"
+    image: "/lovable-uploads/3b7a0bb6-45ba-481c-bb60-c2395e51f1f2.png"
   },
   {
     icon: Calendar,

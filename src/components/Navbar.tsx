@@ -75,28 +75,6 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={cn(isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
-                    Learn More
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4 w-[400px]">
-                      <li>
-                        <Link to="/tech-details" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
-                          <div className="font-medium dark:text-white">Technology Details</div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">How our smart textile platform works</p>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/development-process" className="block p-3 space-y-1 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700">
-                          <div className="font-medium dark:text-white">Development Process</div>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">Our approach to creating custom solutions</p>
-                        </Link>
-                      </li>
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                
-                <NavigationMenuItem>
                   <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600" : "bg-gray-700 text-white hover:bg-gray-600")}>
                     Contact Us
                   </button>
@@ -133,34 +111,6 @@ const Navbar = () => {
           }}>
             About Us
           </Link>
-          
-          <div className="block">
-            <button onClick={e => {
-              e.preventDefault();
-              const submenu = e.currentTarget.nextElementSibling;
-              if (submenu) {
-                submenu.classList.toggle('hidden');
-              }
-            }} className={cn("flex w-full justify-between items-center px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" : "text-gray-200 hover:bg-gray-900")}>
-              <span>Learn More</span>
-              <ChevronDown className="h-4 w-4" />
-            </button>
-            
-            <div className="hidden ml-4 mt-1 space-y-1">
-              <Link to="/tech-details" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-                setIsMenuOpen(false);
-                window.scrollTo(0, 0);
-              }}>
-                Technology Details
-              </Link>
-              <Link to="/development-process" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
-                setIsMenuOpen(false);
-                window.scrollTo(0, 0);
-              }}>
-                Development Process
-              </Link>
-            </div>
-          </div>
           
           <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" : "text-white bg-gray-700 hover:bg-gray-600")}>
             Contact Us

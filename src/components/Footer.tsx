@@ -1,5 +1,5 @@
 
-import { ArrowRight, Linkedin, Instagram, Twitter } from "lucide-react";
+import { ArrowRight, Linkedin, Instagram, Twitter, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -68,6 +68,14 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-gray-900 text-white pt-16 pb-8 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
+        {/* Contact us today section */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4 text-white">Let's Connect</h2>
+          <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+            Whether you're curious about our services, want to partner with us, or just need assistance with your order, our team is ready to support you.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
@@ -81,10 +89,13 @@ const Footer = () => {
             <p className="text-gray-300 mb-6">
               India's First All-in-One Laundry App – Connecting You to Trusted Local Laundries. Making laundry as easy as ordering food.
             </p>
-            <p className="text-gray-300 mb-6">
-              Mumbai, Maharashtra<br />
-              India
-            </p>
+            <div className="text-gray-300 mb-6">
+              <p className="font-semibold text-white mb-2">GoBright Solutions Private Limited</p>
+              <p>CC 54, 2593-5, Bose Nagar, Kadavanthra,</p>
+              <p>Kochi, Kerala - 682020</p>
+              <p className="mt-2">gobright.co.in@gmail.com</p>
+              <p>+91 9496763260</p>
+            </div>
             <div className="flex space-x-4">
               <a 
                 href="#" 
@@ -118,13 +129,32 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Stay Updated</h3>
-            <form className="space-y-4" onSubmit={handleSubscribe}>
+            <h3 className="text-lg font-bold mb-4 text-white">Download App</h3>
+            <div className="space-y-4 mb-6">
+              <button className="w-full flex items-center justify-center px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors">
+                <Smartphone className="w-5 h-5 mr-2 text-gray-300" />
+                <div className="text-left">
+                  <div className="text-xs text-gray-400">Download for</div>
+                  <div className="text-sm font-semibold text-white">Android</div>
+                </div>
+              </button>
+              
+              <button className="w-full flex items-center justify-center px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors">
+                <Smartphone className="w-5 h-5 mr-2 text-gray-300" />
+                <div className="text-left">
+                  <div className="text-xs text-gray-400">Download for</div>
+                  <div className="text-sm font-semibold text-white">iOS</div>
+                </div>
+              </button>
+            </div>
+            
+            <h4 className="text-sm font-bold mb-2 text-white">Stay Updated</h4>
+            <form className="space-y-2" onSubmit={handleSubscribe}>
               <div>
                 <input 
                   type="email" 
                   placeholder="Your email" 
-                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600 text-white placeholder-gray-400"
+                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600 text-white placeholder-gray-400 text-sm"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isSubmitting}
@@ -132,13 +162,13 @@ const Footer = () => {
               </div>
               <button 
                 type="submit" 
-                className="w-full px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-3 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed text-sm"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Subscribing..." : (
                   <>
                     Subscribe
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    <ArrowRight className="ml-1 w-3 h-3" />
                   </>
                 )}
               </button>
