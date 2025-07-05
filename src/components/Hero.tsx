@@ -1,6 +1,5 @@
 
 import { ArrowRight, Smartphone, MapPin, Clock, MessageSquare } from "lucide-react";
-import { AndroidOutlined, AppleOutlined } from '@ant-design/icons';
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -82,16 +81,16 @@ const Hero = () => {
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-teal-800 text-white rounded-md hover:bg-teal-900 transition-all shadow-lg hover:shadow-xl hover:shadow-teal-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
                   onClick={scrollToContact}
                 >
-                  <AndroidOutlined className="mr-2 text-base" />
                   Download for Android
+                  <Smartphone className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                 </button>
 
                 <button 
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-all shadow-lg hover:shadow-xl hover:shadow-gray-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
                   onClick={scrollToContact}
                 >
-                  <AppleOutlined className="mr-2 text-base" />
                   Download for iOS
+                  <Smartphone className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                 </button>
               </motion.div>
             </motion.div>
