@@ -76,7 +76,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 pb-10 border-b border-gray-700">
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img 
@@ -120,33 +120,12 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Services</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-6">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Wash & Fold</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Dry Cleaning</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Ironing Service</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Shoe Cleaning</a></li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-bold mb-4 text-white">Download App</h3>
-            <div className="space-y-4 mb-6">
-              <button className="w-full flex items-center justify-center px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors">
-                <Smartphone className="w-5 h-5 mr-2 text-gray-300" />
-                <div className="text-left">
-                  <div className="text-xs text-gray-400">Download for</div>
-                  <div className="text-sm font-semibold text-white">Android</div>
-                </div>
-              </button>
-              
-              <button className="w-full flex items-center justify-center px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition-colors">
-                <Smartphone className="w-5 h-5 mr-2 text-gray-300" />
-                <div className="text-left">
-                  <div className="text-xs text-gray-400">Download for</div>
-                  <div className="text-sm font-semibold text-white">iOS</div>
-                </div>
-              </button>
-            </div>
             
             <h4 className="text-sm font-bold mb-2 text-white">Stay Updated</h4>
             <form className="space-y-2" onSubmit={handleSubscribe}>
