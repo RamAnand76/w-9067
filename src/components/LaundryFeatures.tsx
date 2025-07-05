@@ -74,7 +74,7 @@ const LaundryFeatures = () => {
             className="bg-gradient-to-br from-teal-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 p-10 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-600 max-w-4xl mx-auto"
           >
             <img 
-              src="/lovable-uploads/4bb1bdae-d248-4318-9bb8-44efe0896e8f.png" 
+              src="/lovable-uploads/7c4a98c7-4e64-4a11-9910-457955260571.png" 
               alt="Nearby Laundries" 
               className="w-72 h-72 mx-auto mb-8 object-contain"
             />
