@@ -1,5 +1,5 @@
 
-import { ArrowLeft, CheckCircle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
@@ -119,6 +119,70 @@ const About = () => {
                 initial={{ opacity: 0, y: 20 }} 
                 animate={{ opacity: 1, y: 0 }} 
                 transition={{ duration: 0.6, delay: 0.6 }}
+                className="mb-16"
+              >
+                <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Meet Our Founders</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col items-center text-center">
+                        <Avatar className="w-32 h-32 mb-4">
+                          <AvatarImage src="/lovable-uploads/ade7d3dd-cb04-4d46-a9ca-ee03fa8a3d8f.png" alt="Rino Joseph" />
+                          <AvatarFallback>RJ</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Rino Joseph</h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">Co-Founder</p>
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
+                            <Mail className="w-4 h-4 mr-2" />
+                            <a href="mailto:rinojoseph023@gmail.com" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                              rinojoseph023@gmail.com
+                            </a>
+                          </div>
+                          <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
+                            <Phone className="w-4 h-4 mr-2" />
+                            <a href="tel:+917034593260" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                              +91 7034593260
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col items-center text-center">
+                        <Avatar className="w-32 h-32 mb-4">
+                          <AvatarImage src="/lovable-uploads/a9fc2358-8710-4ef0-a69d-10e0ad634d7d.png" alt="Anandhu" />
+                          <AvatarFallback>AN</AvatarFallback>
+                        </Avatar>
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Anandhu</h3>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">Co-Founder</p>
+                        <div className="space-y-2">
+                          <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
+                            <Mail className="w-4 h-4 mr-2" />
+                            <a href="mailto:ananduma1999m@gmail.com" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                              ananduma1999m@gmail.com
+                            </a>
+                          </div>
+                          <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
+                            <Phone className="w-4 h-4 mr-2" />
+                            <a href="tel:+919847437892" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                              +91 98474 37892
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }} 
+                animate={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 0.6, delay: 0.8 }}
                 className="mb-16"
               >
                 <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Our Team – The People Behind GoBright</h2>
