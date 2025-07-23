@@ -118,18 +118,33 @@ const About = () => {
               <motion.div 
                 initial={{ opacity: 0, y: 20 }} 
                 animate={{ opacity: 1, y: 0 }} 
-                transition={{ duration: 0.6, delay: 0.6 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
                 className="mb-16"
               >
-                <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Meet Our Founders</h2>
+                <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Our Team – The People Behind GoBright</h2>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8 shadow-sm mb-8">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    We're a passionate team of engineers, innovators, and problem-solvers on a mission to simplify everyday life—starting with laundry.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Together, we turn laundry day into just another tap on your phone.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Built by everyday users, for everyday users—because we've lived the problem, and we're solving it.
+                  </p>
+                </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+                  <Card className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
                     <CardContent className="p-6">
                       <div className="flex flex-col items-center text-center">
-                        <Avatar className="w-32 h-32 mb-4">
-                          <AvatarImage src="/lovable-uploads/ade7d3dd-cb04-4d46-a9ca-ee03fa8a3d8f.png" alt="Rino Joseph" />
-                          <AvatarFallback>RJ</AvatarFallback>
-                        </Avatar>
+                        <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-teal-600/20">
+                          <img 
+                            src="/lovable-uploads/ade7d3dd-cb04-4d46-a9ca-ee03fa8a3d8f.png" 
+                            alt="Rino Joseph" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Rino Joseph</h3>
                         <p className="text-gray-600 dark:text-gray-300 mb-4">Co-Founder</p>
                         <div className="space-y-2">
@@ -150,13 +165,16 @@ const About = () => {
                     </CardContent>
                   </Card>
                   
-                  <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
+                  <Card className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm">
                     <CardContent className="p-6">
                       <div className="flex flex-col items-center text-center">
-                        <Avatar className="w-32 h-32 mb-4">
-                          <AvatarImage src="/lovable-uploads/a9fc2358-8710-4ef0-a69d-10e0ad634d7d.png" alt="Anandhu" />
-                          <AvatarFallback>AN</AvatarFallback>
-                        </Avatar>
+                        <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-teal-600/20">
+                          <img 
+                            src="/lovable-uploads/a9fc2358-8710-4ef0-a69d-10e0ad634d7d.png" 
+                            alt="Anandhu" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Anandhu</h3>
                         <p className="text-gray-600 dark:text-gray-300 mb-4">Co-Founder</p>
                         <div className="space-y-2">
@@ -176,26 +194,6 @@ const About = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </div>
-              </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }} 
-                animate={{ opacity: 1, y: 0 }} 
-                transition={{ duration: 0.6, delay: 0.8 }}
-                className="mb-16"
-              >
-                <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Our Team – The People Behind GoBright</h2>
-                <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-8 shadow-sm mb-8">
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    We're a passionate team of engineers, innovators, and problem-solvers on a mission to simplify everyday life—starting with laundry.
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    Together, we turn laundry day into just another tap on your phone.
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Built by everyday users, for everyday users—because we've lived the problem, and we're solving it.
-                  </p>
                 </div>
               </motion.div>
             </div>
