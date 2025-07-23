@@ -26,11 +26,11 @@ export default function BackgroundOverlayCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="w-full"
+      className="max-w-xs w-full"
     >
       <div
         className={cn(
-          "group w-full cursor-pointer overflow-hidden relative card h-80 rounded-xl shadow-xl mx-auto flex flex-col justify-end p-6 border border-transparent dark:border-neutral-800",
+          "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-xl shadow-xl mx-auto flex flex-col justify-end p-6 border border-transparent dark:border-neutral-800",
           "bg-cover bg-center",
           "before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-40",
           "hover:before:opacity-60",
@@ -47,11 +47,11 @@ export default function BackgroundOverlayCard({
           <Icon className="w-6 h-6 text-white" />
         </div>
         
-        <div className="text relative z-50 bg-black/30 dark:bg-black/50 backdrop-blur-sm rounded-lg p-4">
-          <h1 className="font-bold text-xl md:text-2xl text-white relative mb-2 drop-shadow-lg">
+        <div className="text relative z-50">
+          <h1 className="font-bold text-xl md:text-2xl text-white relative mb-2">
             {title}
           </h1>
-          <p className="font-normal text-sm text-gray-100 relative leading-relaxed drop-shadow-md">
+          <p className="font-normal text-sm text-gray-100 relative leading-relaxed">
             {description}
           </p>
         </div>
