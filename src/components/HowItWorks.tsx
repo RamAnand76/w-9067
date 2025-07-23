@@ -1,6 +1,7 @@
 
 import { Search, GitCompare, Calendar, Truck } from "lucide-react";
 import { motion } from "framer-motion";
+import BackgroundOverlayCard from "@/components/ui/background-overlay-card";
 
 const steps = [
   {
@@ -40,34 +41,17 @@ const HowItWorks = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 justify-items-center">
           {steps.map((step, index) => (
-            <motion.div
+            <BackgroundOverlayCard
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="relative mb-4">
-                <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <step.icon className="w-6 h-6 text-teal-600 dark:text-teal-400" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-teal-600 dark:bg-teal-500 text-white rounded-full flex items-center justify-center text-xs font-bold">
-                  {index + 1}
-                </div>
-              </div>
-              
-              <img 
-                src={step.image} 
-                alt={step.title} 
-                className="w-32 h-32 mx-auto mb-4 object-contain rounded-lg"
-              />
-              
-              <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">{step.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">{step.description}</p>
-            </motion.div>
+              icon={step.icon}
+              title={step.title}
+              description={step.description}
+              backgroundImage={step.image}
+              stepNumber={index + 1}
+              index={index}
+            />
           ))}
         </div>
         
