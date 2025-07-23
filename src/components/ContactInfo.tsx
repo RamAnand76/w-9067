@@ -18,52 +18,24 @@ const ContactInfo = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Rino Joseph's Contact Info */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 md:p-8 border border-gray-200 dark:border-gray-700">
-            <div className="flex flex-col items-center text-center">
-              <img 
-                src="/lovable-uploads/ade7d3dd-cb04-4d46-a9ca-ee03fa8a3d8f.png"
-                alt="Rino Joseph"
-                className="w-32 h-32 rounded-full mb-4 object-cover"
-              />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Rino Joseph</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">Co-Founder</p>
-              <div className="flex flex-col space-y-3">
-                <a href="mailto:rinojoseph023@gmail.com" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400">
-                  <Mail className="w-5 h-5 mr-2" />
-                  rinojoseph023@gmail.com
-                </a>
-                <a href="tel:+917034593260" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400">
-                  <Phone className="w-5 h-5 mr-2" />
-                  +91 7034593260
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Anandhu's Contact Info */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 md:p-8 border border-gray-200 dark:border-gray-700">
-            <div className="flex flex-col items-center text-center">
-              <img 
-                src="/lovable-uploads/a9fc2358-8710-4ef0-a69d-10e0ad634d7d.png"
-                alt="Anandhu"
-                className="w-32 h-32 rounded-full mb-4 object-cover"
-              />
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Anandhu</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">Co-Founder</p>
-              <div className="flex flex-col space-y-3">
-                <a href="mailto:ananduma1999m@gmail.com" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400">
-                  <Mail className="w-5 h-5 mr-2" />
-                  ananduma1999m@gmail.com
-                </a>
-                <a href="tel:+919847437892" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-teal-600 dark:hover:text-teal-400">
-                  <Phone className="w-5 h-5 mr-2" />
-                  +91 98474 37892
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a 
+            href="mailto:rinojoseph023@gmail.com" 
+            className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+          >
+            <Mail className="w-5 h-5" />
+            Send us an Email
+          </a>
+          
+          <a 
+            href="https://wa.me/917034593260?text=Hello%20from%20Go%20Bright%20website!" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+          >
+            <Phone className="w-5 h-5" />
+            WhatsApp Us
+          </a>
         </div>
       </div>
     </section>

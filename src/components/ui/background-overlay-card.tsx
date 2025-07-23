@@ -39,15 +39,15 @@ export default function BackgroundOverlayCard({
         )}
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute top-4 right-4 w-8 h-8 bg-teal-600 dark:bg-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-50">
+        <div className="absolute top-4 right-4 w-8 h-8 bg-teal-600 dark:bg-teal-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10">
           {stepNumber}
         </div>
         
-        <div className="absolute top-4 left-4 w-12 h-12 bg-teal-100/20 dark:bg-teal-900/20 backdrop-blur-sm rounded-full flex items-center justify-center z-50">
+        <div className="absolute top-4 left-4 w-12 h-12 bg-teal-100/20 dark:bg-teal-900/20 backdrop-blur-sm rounded-full flex items-center justify-center z-10">
           <Icon className="w-6 h-6 text-white" />
         </div>
         
-        <div className="text relative z-50">
+        <div className="text relative z-10">
           <h1 className="font-bold text-xl md:text-2xl text-white relative mb-2">
             {title}
           </h1>
