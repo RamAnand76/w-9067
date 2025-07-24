@@ -1,69 +1,7 @@
 
-import { ArrowRight, Linkedin, Instagram, Twitter, Smartphone } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
-import emailjs from 'emailjs-com';
+import { Linkedin, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email) {
-      toast({
-        title: "Error",
-        description: "Please enter your email address.",
-        variant: "destructive"
-      });
-      return;
-    }
-    
-    setIsSubmitting(true);
-    
-    try {
-      // EmailJS configuration
-      const EMAILJS_SERVICE_ID = "service_i3h66xg";
-      const EMAILJS_TEMPLATE_ID = "template_fgq53nh";
-      const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
-      
-      const templateParams = {
-        from_name: "GoBright Subscriber",
-        from_email: email,
-        message: `New subscription request from GoBright website.`,
-        to_name: 'GoBright Team',
-        reply_to: email
-      };
-      
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams,
-        EMAILJS_PUBLIC_KEY
-      );
-      
-      toast({
-        title: "Success!",
-        description: "Thank you for subscribing to GoBright updates.",
-        variant: "default"
-      });
-      
-      setEmail("");
-    } catch (error) {
-      console.error("Error sending subscription:", error);
-      
-      toast({
-        title: "Error",
-        description: "There was a problem subscribing. Please try again later.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <footer id="contact" className="bg-gray-900 text-white pt-16 pb-8 w-full">
@@ -76,8 +14,8 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 pb-10 border-b border-gray-700">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10 border-b border-gray-700">
+          <div>
             <div className="flex items-center mb-6">
               <img 
                 src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" 
@@ -120,38 +58,12 @@ const Footer = () => {
           
           <div>
             <h3 className="text-lg font-bold mb-4 text-white">Services</h3>
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-3">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Wash & Fold</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Dry Cleaning</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Ironing Service</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Shoe Cleaning</a></li>
             </ul>
-            
-            <h4 className="text-sm font-bold mb-2 text-white">Stay Updated</h4>
-            <form className="space-y-2" onSubmit={handleSubscribe}>
-              <div>
-                <input 
-                  type="email" 
-                  placeholder="Your email" 
-                  className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600 text-white placeholder-gray-400 text-sm"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  disabled={isSubmitting}
-                />
-              </div>
-              <button 
-                type="submit" 
-                className="w-full px-3 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed text-sm"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Subscribing..." : (
-                  <>
-                    Subscribe
-                    <ArrowRight className="ml-1 w-3 h-3" />
-                  </>
-                )}
-              </button>
-            </form>
           </div>
         </div>
         
