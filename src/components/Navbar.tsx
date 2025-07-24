@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
-import optimizedLogo from '@/assets/gobright-logo-optimized.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +49,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src={optimizedLogo} alt="GoBright Logo" className="h-8 w-auto mr-2" />
+              <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="h-8 w-auto mr-2" />
               <span className={cn("text-xl font-bold", isScrolled ? "text-gray-900 dark:text-white" : "text-white")}>GoBright</span>
             </Link>
           </div>

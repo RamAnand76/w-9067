@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
-import optimizedLogo from '@/assets/gobright-logo-optimized.png';
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -81,7 +80,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img 
-                src={optimizedLogo} 
+                src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" 
                 alt="GoBright Logo" 
                 className="h-12 w-12 mr-3"
               />
