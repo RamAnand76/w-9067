@@ -3,6 +3,7 @@ import { ArrowRight, Smartphone, MapPin, Clock, MessageSquare } from "lucide-rea
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import optimizedLogo from '@/assets/gobright-logo-optimized.png';
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -54,7 +55,7 @@ const Hero = () => {
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.div className="mb-6" variants={itemVariants}>
-                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="h-20 w-20 sm:h-24 sm:w-24 mx-auto mb-4" />
+                <img src={optimizedLogo} alt="GoBright Logo" className="h-20 w-20 sm:h-24 sm:w-24 mx-auto mb-4" />
               </motion.div>
               <motion.h1 className="banner-title text-white" variants={itemVariants}>Brighten Your Day with Clean Clothes — Delivered to Your Doorstep</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
