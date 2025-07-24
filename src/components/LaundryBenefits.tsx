@@ -19,7 +19,7 @@ const benefits = [
   {
     icon: Building,
     title: "For Laundry Shops",
-    subtitle: "Grow Your Business with Go Bright",
+    subtitle: "Grow Your Business with GoBright",
     points: [
       "Connect with customers in your area",
       "Showcase your services and pricing",
@@ -38,7 +38,7 @@ const LaundryBenefits = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Built for Everyone</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Go Bright brings value to both customers seeking convenience and laundry businesses looking to grow.
+            GoBright brings value to both customers seeking convenience and laundry businesses looking to grow.
           </p>
         </div>
         
@@ -109,7 +109,7 @@ const LaundryBenefits = () => {
           </div>
           <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Laundry Experience?</h3>
           <p className="text-lg mb-8 max-w-2xl mx-auto text-white/90">
-            Join thousands of satisfied customers and partner laundries who have made the smart choice with Go Bright.
+            Join thousands of satisfied customers and partner laundries who have made the smart choice with GoBright.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md">

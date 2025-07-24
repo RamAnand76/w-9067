@@ -20,7 +20,7 @@ const Index = () => {
   return (
     <PageLayout>
       <SEO 
-        title="Go Bright - India's First All-in-One Laundry App" 
+        title="GoBright - Your Smart Way to Laundry" 
         description="Brighten Your Day with Clean Clothes — Delivered to Your Doorstep. Find trusted local laundries, compare prices, and book pickup & delivery in one click."
         imageUrl="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png"
         keywords={['laundry app', 'doorstep laundry', 'laundry service', 'local laundry', 'laundry delivery', 'dry cleaning', 'India laundry']}

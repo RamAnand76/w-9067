@@ -146,7 +146,7 @@ const About = () => {
                           />
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Rino Joseph</h3>
-                        <p className="text-gray-600 dark:text-gray-300 mb-4">Co-Founder</p>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">CEO</p>
                         <div className="space-y-2">
                           <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
                             <Mail className="w-4 h-4 mr-2" />
@@ -176,7 +176,7 @@ const About = () => {
                           />
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Anandhu</h3>
-                        <p className="text-gray-600 dark:text-gray-300 mb-4">Co-Founder</p>
+                        <p className="text-gray-600 dark:text-gray-300 mb-4">COO</p>
                         <div className="space-y-2">
                           <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
                             <Mail className="w-4 h-4 mr-2" />

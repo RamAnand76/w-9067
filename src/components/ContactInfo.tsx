@@ -14,7 +14,7 @@ const ContactInfo = () => {
             Contact Us Today
           </h2>
           <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
-            Have questions about Go Bright laundry services? Reach out to our team and let's discuss how we can help make your laundry experience seamless.
+            Have questions about GoBright laundry services? Reach out to our team and let's discuss how we can help make your laundry experience seamless.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ const ContactInfo = () => {
           </a>
           
           <a 
-            href="https://wa.me/917034593260?text=Hello%20from%20Go%20Bright%20website!" 
+            href="https://wa.me/917034593260?text=Hello%20from%20GoBright%20website!" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"

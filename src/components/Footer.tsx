@@ -31,10 +31,10 @@ const Footer = () => {
       const EMAILJS_PUBLIC_KEY = "wQmcZvoOqTAhGnRZ3";
       
       const templateParams = {
-        from_name: "Go Bright Subscriber",
+        from_name: "GoBright Subscriber",
         from_email: email,
-        message: `New subscription request from Go Bright website.`,
-        to_name: 'Go Bright Team',
+        message: `New subscription request from GoBright website.`,
+        to_name: 'GoBright Team',
         reply_to: email
       };
       
@@ -47,7 +47,7 @@ const Footer = () => {
       
       toast({
         title: "Success!",
-        description: "Thank you for subscribing to Go Bright updates.",
+        description: "Thank you for subscribing to GoBright updates.",
         variant: "default"
       });
       
@@ -81,13 +81,13 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <img 
                 src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" 
-                alt="Go Bright Logo" 
+                alt="GoBright Logo" 
                 className="h-12 w-12 mr-3"
               />
-              <h2 className="text-2xl font-bold text-white">Go Bright</h2>
+              <h2 className="text-2xl font-bold text-white">GoBright</h2>
             </div>
             <p className="text-gray-300 mb-6">
-              India's First All-in-One Laundry App – Connecting You to Trusted Local Laundries. Making laundry as easy as ordering food.
+              GoBright - Your Smart Way to Laundry. Making laundry as easy as ordering food.
             </p>
             <div className="text-gray-300 mb-6">
               <p className="font-semibold text-white mb-2">GoBright Solutions Private Limited</p>
@@ -157,7 +157,7 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Go Bright. All rights reserved.
+            © {new Date().getFullYear()} GoBright. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a>

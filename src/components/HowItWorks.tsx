@@ -7,7 +7,7 @@ const steps = [
   {
     icon: Search,
     title: "Discover",
-    description: "Open the Go Bright app and instantly see verified local laundries around you with ratings and reviews.",
+    description: "Open the GoBright app and instantly see verified local laundries around you with ratings and reviews.",
     image: "/lovable-uploads/4bb1bdae-d248-4318-9bb8-44efe0896e8f.png"
   },
   {
@@ -35,7 +35,7 @@ const HowItWorks = () => {
     <section id="how-it-works" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">How Go Bright Works</h2>
+          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">How GoBright Works</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Your Gateway to Trusted Local Laundries - Making laundry as easy as ordering food
           </p>
@@ -63,9 +63,9 @@ const HowItWorks = () => {
             viewport={{ once: true }}
             className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-xl max-w-3xl mx-auto"
           >
-            <h3 className="text-lg font-semibold mb-2 text-teal-800 dark:text-teal-300">Every Problem Has One Solution – Go Bright</h3>
+            <h3 className="text-lg font-semibold mb-2 text-teal-800 dark:text-teal-300">Every Problem Has One Solution – GoBright</h3>
             <p className="text-teal-700 dark:text-teal-400">
-              Whether you're a busy professional, a student, or a laundry shop owner, Go Bright is built to make your life easier.
+              Whether you're a busy professional, a student, or a laundry shop owner, GoBright is built to make your life easier.
             </p>
           </motion.div>
         </div>

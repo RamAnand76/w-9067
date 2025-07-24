@@ -40,9 +40,9 @@ const LaundryFeatures = () => {
     <section className="py-20 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Why Choose Go Bright?</h2>
+          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Why Choose GoBright?</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Say goodbye to laundry struggles and endless searching. Go Bright brings every laundry service near you into one easy-to-use app.
+            Say goodbye to laundry struggles and endless searching. GoBright brings every laundry service near you into one easy-to-use app.
           </p>
         </div>
         
