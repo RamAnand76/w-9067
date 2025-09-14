@@ -20,7 +20,7 @@ const ContactInfo = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a 
-            href="mailto:rinojoseph023@gmail.com" 
+            href="mailto:gobright.co.in@gmail.com" 
             className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <Mail className="w-5 h-5" />
@@ -28,7 +28,7 @@ const ContactInfo = () => {
           </a>
           
           <a 
-            href="https://wa.me/917034593260?text=Hello%20from%20GoBright%20website!" 
+            href="https://wa.me/919496763260?text=Hello%20from%20GoBright%20website!" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
