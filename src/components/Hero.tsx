@@ -99,31 +99,44 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 mx-auto">
-        <motion.div className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4" variants={containerVariants} initial="hidden" animate="visible" transition={{
-        delay: 0.6
-      }}>
-          <motion.div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-teal-100 dark:bg-teal-900 flex items-center justify-center rounded-lg text-teal-600 dark:text-teal-400 mb-2 md:mb-3">
-              <MapPin className="w-5 h-5 md:w-6 md:h-6" />
+        <motion.div 
+          className="mt-6 md:mt-8 grid grid-cols-1 md:grid-cols-3 gap-4" 
+          variants={containerVariants} 
+          initial="hidden" 
+          animate="visible" 
+          transition={{ delay: 0.6 }}
+        >
+          <motion.div 
+            className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col items-center text-center"
+            variants={itemVariants}
+          >
+            <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 flex items-center justify-center rounded-lg text-teal-600 dark:text-teal-400 mb-3">
+              <MapPin className="w-6 h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800 dark:text-gray-200">Find Nearby</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">Discover verified local laundries around you with real-time availability.</p>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">Find Nearby</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Discover verified local laundries around you with real-time availability.</p>
           </motion.div>
           
-          <motion.div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-teal-100 dark:bg-teal-900 flex items-center justify-center rounded-lg text-teal-600 dark:text-teal-400 mb-2 md:mb-3">
-              <Smartphone className="w-5 h-5 md:w-6 md:h-6" />
+          <motion.div 
+            className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col items-center text-center"
+            variants={itemVariants}
+          >
+            <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 flex items-center justify-center rounded-lg text-teal-600 dark:text-teal-400 mb-3">
+              <Smartphone className="w-6 h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800 dark:text-gray-200">One-Click Booking</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">Compare services, prices, and book pickup & delivery in just one click.</p>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">One-Click Booking</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Compare services, prices, and book pickup & delivery in just one click.</p>
           </motion.div>
           
-          <motion.div className="bg-white dark:bg-gray-800 p-4 md:p-5 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md" variants={itemVariants}>
-            <div className="w-10 h-10 md:w-12 md:h-12 bg-teal-100 dark:bg-teal-900 flex items-center justify-center rounded-lg text-teal-600 dark:text-teal-400 mb-2 md:mb-3">
-              <Clock className="w-5 h-5 md:w-6 md:h-6" />
+          <motion.div 
+            className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-md flex flex-col items-center text-center"
+            variants={itemVariants}
+          >
+            <div className="w-12 h-12 bg-teal-100 dark:bg-teal-900 flex items-center justify-center rounded-lg text-teal-600 dark:text-teal-400 mb-3">
+              <Clock className="w-6 h-6" />
             </div>
-            <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-2 text-gray-800 dark:text-gray-200">Track & Deliver</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-xs md:text-sm">Real-time tracking with guaranteed doorstep delivery at your convenience.</p>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">Track & Deliver</h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Real-time tracking with guaranteed doorstep delivery at your convenience.</p>
           </motion.div>
         </motion.div>
       </div>
