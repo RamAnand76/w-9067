@@ -1,69 +1,61 @@
-# Welcome to your Lovable project
+# GoBright - Your Smart Way to Laundry
 
-## Project info
+Welcome to the official repository for the GoBright application. This project is designed to bring convenience, speed, and quality to your doorstep with an app-based laundry service.
 
-**URL**: https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6
+## Project Description
 
-## How can I edit this code?
+GoBright is India's first fully app-based laundry service, connecting users with trusted local laundries. It allows users to find nearby services, compare prices, schedule pickups and deliveries, and track their orders in real-time, making laundry as easy as ordering food.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+This project is built with a modern and robust tech stack:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6) and start prompting.
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool for modern web development.
+- **TypeScript**: A statically typed superset of JavaScript.
+- **shadcn/ui**: Beautifully designed components that you can copy and paste into your apps.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **React Router**: For declarative routing in React applications.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+To get a local copy up and running, follow these simple steps.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+You'll need to have [Node.js](https://nodejs.org/en/) and npm (which comes with Node.js) installed on your system. We recommend using [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versions.
 
-Follow these steps:
+### Installation & Local Development
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1.  **Clone the repository:**
+    ```sh
+    git clone <YOUR_GIT_URL>
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2.  **Navigate to the project directory:**
+    ```sh
+    cd <YOUR_PROJECT_NAME>
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4.  **Start the development server:**
+    ```sh
+    npm run dev
+    ```
+    This will start the development server, usually on `http://localhost:8080`. You can now view the application in your browser.
 
-**Edit a file directly in GitHub**
+## Editing with Lovable
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+You can also edit this project conversationally using Lovable. Simply visit the project link below and start prompting:
 
-**Use GitHub Codespaces**
+[**Edit on Lovable**](https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Changes made via Lovable will be automatically committed to this repository.
 
-## What technologies are used for this project?
+## Deployment
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+You can easily deploy this project using Lovable. Open the project dashboard and navigate to **Share -> Publish**.
