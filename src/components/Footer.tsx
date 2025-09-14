@@ -1,5 +1,5 @@
 
-import { Linkedin, Instagram, Twitter } from "lucide-react";
+import { Linkedin, Instagram, Twitter, Facebook } from "lucide-react";
 
 const Footer = () => {
 
@@ -36,16 +36,22 @@ const Footer = () => {
             </div>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/gobright-india/" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-teal-600 hover:text-white"
               >
                 <Linkedin size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/gobrightindia/" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-teal-600 hover:text-white"
               >
                 <Instagram size={20} />
+              </a>
+              <a 
+                href="https://www.facebook.com/share/16K4opdaWc/" 
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-teal-600 hover:text-white"
+              >
+                <Facebook size={20} />
               </a>
               <a 
                 href="#" 
