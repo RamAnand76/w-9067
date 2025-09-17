@@ -43,6 +43,8 @@ const Hero = () => {
     }
   };
   
+  const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
+  
   return <motion.div className="relative mt-16 md:mt-0 w-full" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[60vh] sm:h-[70vh] md:h-[750px] w-full">
         <div className="absolute inset-0 w-full">
@@ -77,6 +79,16 @@ const Hero = () => {
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 
+                <a 
+                  href={whatsappUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition-all shadow-lg hover:shadow-xl hover:shadow-green-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
+                >
+                  Request a Service
+                  <MessageSquare className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
+                </a>
+
                 <button 
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-teal-800 text-white rounded-md hover:bg-teal-900 transition-all shadow-lg hover:shadow-xl hover:shadow-teal-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
                   onClick={scrollToContact}
