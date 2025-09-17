@@ -1,7 +1,8 @@
 
-import { Search, GitCompare, Calendar, Truck } from "lucide-react";
+import { Search, GitCompare, Calendar, Truck, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import BackgroundOverlayCard from "@/components/ui/background-overlay-card";
+import { Button } from "./ui/button";
 
 const steps = [
   {
@@ -31,6 +32,8 @@ const steps = [
 ];
 
 const HowItWorks = () => {
+  const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
+
   return (
     <section id="how-it-works" className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
@@ -68,6 +71,19 @@ const HowItWorks = () => {
               Whether you're a busy professional, a student, or a laundry shop owner, GoBright is built to make your life easier.
             </p>
           </motion.div>
+        </div>
+
+        <div className="text-center mt-12">
+            <a 
+                href={whatsappUrl}
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Request a Service
+                </Button>
+            </a>
         </div>
       </div>
     </section>

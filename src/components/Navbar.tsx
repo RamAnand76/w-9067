@@ -36,6 +36,8 @@ const Navbar = () => {
     }
     setIsMenuOpen(false);
   };
+  
+  const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
 
   return (
     <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm" : "bg-black dark:bg-black")} initial={{
@@ -75,6 +77,12 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={cn(navigationMenuTriggerStyle(), "bg-teal-600 text-white hover:bg-teal-700 hover:text-white dark:bg-teal-500 dark:hover:bg-teal-600")}>
+                    Request a Service
+                  </a>
+                </NavigationMenuItem>
+                
+                <NavigationMenuItem>
                   <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600" : "bg-gray-700 text-white hover:bg-gray-600")}>
                     Contact Us
                   </button>
@@ -111,6 +119,10 @@ const Navbar = () => {
           }}>
             About Us
           </Link>
+
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={cn("block w-full text-left px-3 py-2 rounded-md", "bg-teal-600 text-white hover:bg-teal-700")}>
+            Request a Service
+          </a>
           
           <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" : "text-white bg-gray-700 hover:bg-gray-600")}>
             Contact Us
