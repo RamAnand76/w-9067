@@ -4,16 +4,16 @@ import { Mail, Phone } from 'lucide-react';
 
 const ContactInfo = () => {
   return (
-    <section id="contact-info" className="bg-gradient-to-b from-white to-black dark:from-gray-900 dark:to-black text-white relative py-[15px] md:py-[25px]">
+    <section id="contact-info" className="bg-gray-100 dark:bg-gray-900 relative py-16 md:py-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
-          <div className="inline-block mb-3 px-3 py-1 bg-white dark:bg-gray-800 text-black dark:text-white rounded-full text-sm font-medium">
+          <div className="inline-block mb-3 px-3 py-1 bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300 rounded-full text-sm font-medium">
             Get In Touch
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             Contact Us Today
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             Have questions about GoBright laundry services? Reach out to our team and let's discuss how we can help make your laundry experience seamless.
           </p>
         </div>
