@@ -45,7 +45,7 @@ const Hero = () => {
   
   const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
   
-  return <motion.div className="relative mt-16 md:mt-0 w-full" initial="hidden" animate="visible" variants={containerVariants}>
+  return <motion.div className="relative mt-16 md:mt-0 w-full mb-8" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[60vh] sm:h-[70vh] md:h-[750px] w-full">
         <div className="absolute inset-0 w-full">
           <img src="/lovable-uploads/dd0df14a-65e7-44ab-8336-14ccc99d1c98.png" alt="Laundry transformation process" className={`w-full h-full object-cover opacity-20 ${isMobile ? 'object-center' : 'object-center'}`} />
