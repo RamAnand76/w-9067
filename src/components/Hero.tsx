@@ -58,7 +58,7 @@ const Hero = () => {
               <motion.div className="mb-6" variants={itemVariants}>
                 <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="h-20 w-20 sm:h-24 sm:w-24 mx-auto mb-4" />
               </motion.div>
-              <motion.h1 className="banner-title text-white" variants={itemVariants}>REVOLUTIONIZING THE LAUNDRY INDUSTRY WITH A SMART, CONNECTED PLATFORM</motion.h1>
+              <motion.h1 className="text-white text-2xl md:text-3xl font-bold mb-4" variants={itemVariants}>REVOLUTIONIZING THE LAUNDRY INDUSTRY WITH A SMART, CONNECTED PLATFORM</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
                 GoBright - Your Smart Way to Laundry
               </motion.p>
