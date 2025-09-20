@@ -7,9 +7,9 @@ const Footer = () => {
     <footer id="contact" className="bg-gray-900 text-white pt-16 pb-8 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* Contact us today section */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 text-white">Let's Connect</h2>
-          <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+        <div className="text-center mb-16 max-w-4xl mx-auto bg-gradient-to-r from-teal-600 to-blue-600 dark:from-teal-700 dark:to-blue-700 p-10 rounded-2xl shadow-lg">
+          <h2 className="text-4xl font-bold mb-4 text-white">Let's Connect</h2>
+          <p className="text-white/90 text-lg max-w-3xl mx-auto">
             Whether you're curious about our services, want to partner with us, or just need assistance with your order, our team is ready to support you.
           </p>
         </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://www.instagram.com/gobright.india" 
+                href="https://www.instagram.com/gobright.india?igsh=d20yNjA4OTliYWFx" 
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 transition-colors hover:bg-teal-600 hover:text-white"
               >
                 <Instagram size={20} />
