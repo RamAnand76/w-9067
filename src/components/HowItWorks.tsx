@@ -68,7 +68,7 @@ const HowItWorks = () => {
           >
             <h3 className="text-lg font-semibold mb-2 text-teal-800 dark:text-teal-300">Every Problem Has One Solution – GoBright</h3>
             <p className="text-teal-700 dark:text-teal-400">
-              Whether you're a busy professional, a student, or a laundry shop owner, GoBright is built to make your life easier.
+              We are transforming an inefficient laundry system into a smart, seamless, and efficient service with our innovative laundry app!
             </p>
           </motion.div>
         </div>
