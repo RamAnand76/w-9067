@@ -140,7 +140,7 @@ const About = () => {
                       <div className="flex flex-col items-center text-center">
                         <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-teal-600/20">
                           <img 
-                            src="/lovable-uploads/ade7d3dd-cb04-4d46-a9ca-ee03fa8a3d8f.png" 
+                            src="/lovable-uploads/Rino.jpg" 
                             alt="Rino Joseph" 
                             className="w-full h-full object-cover"
                           />
@@ -170,7 +170,7 @@ const About = () => {
                       <div className="flex flex-col items-center text-center">
                         <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-teal-600/20">
                           <img 
-                            src="/lovable-uploads/a9fc2358-8710-4ef0-a69d-10e0ad634d7d.png" 
+                            src="/lovable-uploads/Ananthu.jpg" 
                             alt="Anandhu" 
                             className="w-full h-full object-cover"
                           />
