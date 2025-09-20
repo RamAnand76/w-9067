@@ -150,8 +150,8 @@ const About = () => {
                         <div className="space-y-2">
                           <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
                             <Mail className="w-4 h-4 mr-2" />
-                            <a href="mailto:rinojoseph023@gmail.com" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
-                              rinojoseph023@gmail.com
+                            <a href="mailto:ceo@gobright.co.in" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                              ceo@gobright.co.in
                             </a>
                           </div>
                           <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
@@ -180,8 +180,8 @@ const About = () => {
                         <div className="space-y-2">
                           <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
                             <Mail className="w-4 h-4 mr-2" />
-                            <a href="mailto:ananduma1999m@gmail.com" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
-                              ananduma1999m@gmail.com
+                            <a href="mailto:anandu@gobright.co.in" className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                              anandu@gobright.co.in
                             </a>
                           </div>
                           <div className="flex items-center justify-center text-sm text-gray-600 dark:text-gray-300">
