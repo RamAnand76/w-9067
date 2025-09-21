@@ -97,7 +97,7 @@ const Hero = () => {
                     className="relative z-10 w-auto h-auto max-h-16 sm:max-h-24 drop-shadow-lg -ml-10 mb-8"
                     variants={scooterVariants}
                   />
-                   <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 -mr-10 mb-8">
+                   <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 -mr-12 mb-8">
                     {[0, 1, 2].map((i) => (
                       <motion.div
                         key={i}
