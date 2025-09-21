@@ -73,7 +73,7 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.div className="mb-6 flex justify-center items-end -mt-28" variants={itemVariants}>
+              <motion.div className="mb-6 flex justify-center items-end -mt-36" variants={itemVariants}>
                 <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-32 sm:max-h-40 drop-shadow-lg" />
                 <motion.img 
                   src="/lovable-uploads/Bright-Deliver.png" 
