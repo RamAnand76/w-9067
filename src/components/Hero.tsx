@@ -33,6 +33,24 @@ const Hero = () => {
     }
   };
   
+  const scooterVariants = {
+    hidden: {
+      x: '100vw',
+      opacity: 0
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 15,
+        delay: 0.5,
+        duration: 1.5
+      }
+    }
+  }
+
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -55,8 +73,14 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.div className="mb-6 flex justify-center -mt-28" variants={itemVariants}>
-                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-40 sm:max-h-44 drop-shadow-lg" />
+              <motion.div className="mb-6 flex justify-center items-end -mt-28" variants={itemVariants}>
+                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-32 sm:max-h-40 drop-shadow-lg" />
+                <motion.img 
+                  src="/lovable-uploads/Bright-Deliver.png" 
+                  alt="Delivery Scooter" 
+                  className="w-auto h-auto max-h-24 sm:max-h-32 drop-shadow-lg -ml-4"
+                  variants={scooterVariants}
+                />
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
