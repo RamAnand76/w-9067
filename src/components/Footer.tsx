@@ -16,7 +16,7 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10 border-b border-gray-700">
           <div>
-            <div className="flex items-center justify-start mb-6 -ml-4">
+            <div className="flex items-center justify-start mb-6">
               <img 
                 src="/lovable-uploads/White_logo.png" 
                 alt="GoBright Logo" 
