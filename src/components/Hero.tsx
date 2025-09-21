@@ -55,8 +55,8 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.div className="mb-6 flex justify-center" variants={itemVariants}>
-                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-32 sm:max-h-36 drop-shadow-lg" />
+              <motion.div className="mb-6 flex justify-center -mt-28" variants={itemVariants}>
+                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-48 sm:max-h-52 drop-shadow-lg" />
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
