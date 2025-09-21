@@ -56,7 +56,7 @@ const Hero = () => {
     visible: (i: number) => ({
       opacity: [0, 0.5, 0],
       scale: [0.5, 1.2, 1.5],
-      x: [-10, -30, -50],
+      x: [10, 30, 50],
       transition: {
         delay: i * 0.2 + 1,
         duration: 1.5,
@@ -97,7 +97,7 @@ const Hero = () => {
                     className="relative z-10 w-auto h-auto max-h-16 sm:max-h-24 drop-shadow-lg -ml-10 mb-8"
                     variants={scooterVariants}
                   />
-                   <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 -ml-10 mb-8">
+                   <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 -mr-10 mb-8">
                     {[0, 1, 2].map((i) => (
                       <motion.div
                         key={i}
@@ -106,7 +106,7 @@ const Hero = () => {
                         custom={i}
                         style={{
                           bottom: `${Math.random() * 20 - 10}px`,
-                          left: `${Math.random() * 10}px`,
+                          right: `${Math.random() * 10}px`,
                         }}
                       />
                     ))}
