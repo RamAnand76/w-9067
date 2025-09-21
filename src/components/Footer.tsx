@@ -18,9 +18,9 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-6">
               <img 
-                src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" 
+                src="/lovable-uploads/White_logo.png" 
                 alt="GoBright Logo" 
-                className="h-12 w-auto mr-3"
+                className="h-36 w-auto mr-3"
               />
             </div>
             <p className="text-gray-300 mb-6">
