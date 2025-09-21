@@ -20,9 +20,8 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" 
                 alt="GoBright Logo" 
-                className="h-12 w-12 mr-3"
+                className="h-12 w-auto mr-3"
               />
-              <h2 className="text-2xl font-bold text-white">GoBright</h2>
             </div>
             <p className="text-gray-300 mb-6">
               GoBright - Your Smart Way to Laundry. Making laundry as easy as ordering food.
