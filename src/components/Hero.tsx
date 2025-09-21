@@ -43,7 +43,7 @@ const Hero = () => {
     }
   };
   
-  const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
+  const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
   
   return <motion.div className="relative mt-16 md:mt-0 w-full mb-8" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[60vh] sm:h-[70vh] md:h-[750px] w-full">
@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.div className="mb-6 flex justify-center" variants={itemVariants}>
-                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-24 sm:max-h-28 drop-shadow-lg" />
+                <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-32 sm:max-h-36 drop-shadow-lg" />
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
