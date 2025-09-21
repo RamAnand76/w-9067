@@ -51,6 +51,21 @@ const Hero = () => {
     }
   }
 
+  const smokeVariants = {
+    hidden: { opacity: 0, scale: 0, x: 0 },
+    visible: (i: number) => ({
+      opacity: [0, 0.5, 0],
+      scale: [0.5, 1.2, 1.5],
+      x: [-10, -30, -50],
+      transition: {
+        delay: i * 0.2 + 1,
+        duration: 1.5,
+        repeat: Infinity,
+        ease: "easeOut",
+      },
+    }),
+  };
+
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -75,12 +90,28 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.div className="mb-6 flex justify-center items-end -mt-36" variants={itemVariants}>
                 <img src="/lovable-uploads/30bf33c6-dc07-43fa-9afc-3e6d25a3f723.png" alt="GoBright Logo" className="w-auto h-auto max-h-40 sm:max-h-48 drop-shadow-lg" />
-                <motion.img 
-                  src="/lovable-uploads/Bright-Deliver.png" 
-                  alt="Delivery Scooter" 
-                  className="w-auto h-auto max-h-16 sm:max-h-24 drop-shadow-lg -ml-10 mb-8"
-                  variants={scooterVariants}
-                />
+                <div className="relative">
+                  <motion.img 
+                    src="/lovable-uploads/Bright-Deliver.png" 
+                    alt="Delivery Scooter" 
+                    className="relative z-10 w-auto h-auto max-h-16 sm:max-h-24 drop-shadow-lg -ml-10 mb-8"
+                    variants={scooterVariants}
+                  />
+                   <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 -ml-10 mb-8">
+                    {[0, 1, 2].map((i) => (
+                      <motion.div
+                        key={i}
+                        className="absolute w-4 h-4 bg-white/50 rounded-full blur-sm"
+                        variants={smokeVariants}
+                        custom={i}
+                        style={{
+                          bottom: `${Math.random() * 20 - 10}px`,
+                          left: `${Math.random() * 10}px`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
