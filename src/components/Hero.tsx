@@ -78,7 +78,7 @@ const Hero = () => {
                 <motion.img 
                   src="/lovable-uploads/Bright-Deliver.png" 
                   alt="Delivery Scooter" 
-                  className="w-auto h-auto max-h-16 sm:max-h-24 drop-shadow-lg -ml-6 mb-8"
+                  className="w-auto h-auto max-h-16 sm:max-h-24 drop-shadow-lg -ml-10 mb-8"
                   variants={scooterVariants}
                 />
               </motion.div>
