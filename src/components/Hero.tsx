@@ -89,28 +89,6 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.div className="mb-6 flex justify-center items-end" variants={itemVariants}>
                 <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-40 sm:max-h-48 drop-shadow-lg" />
-                <div className="relative">
-                  <motion.img 
-                    src="/lovable-uploads/Bright-Deliver.png" 
-                    alt="Delivery Scooter" 
-                    className="relative z-10 w-auto h-auto max-h-28 sm:max-h-36 drop-shadow-lg -ml-20 mb-8"
-                    variants={scooterVariants}
-                  />
-                   <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-full -mr-10 mb-8">
-                    {[0, 1, 2].map((i) => (
-                      <motion.div
-                        key={i}
-                        className="absolute w-4 h-4 bg-white/50 rounded-full blur-sm"
-                        variants={smokeVariants}
-                        custom={i}
-                        style={{
-                          bottom: `${Math.random() * 20 - 10}px`,
-                          right: `${Math.random() * 10}px`,
-                        }}
-                      />
-                    ))}
-                  </div>
-                </div>
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
               <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
