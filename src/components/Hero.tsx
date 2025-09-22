@@ -84,16 +84,13 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-teal-600/90 via-teal-600/80 to-white dark:to-gray-900"></div>
         </div>
         
-        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
+        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 pb-20 sm:pb-24 md:pb-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.div className="mt-8 mb-6 flex justify-center items-end" variants={itemVariants}>
                 <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-40 sm:max-h-48 drop-shadow-lg" />
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
-              <motion.p className="banner-subtitle text-white/90 mt-4 sm:mt-6" variants={itemVariants}>
-                GoBright - Your Smart Way to Laundry
-              </motion.p>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
                 <button 
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-white text-teal-700 rounded-md hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:shadow-white/20 flex items-center justify-center group text-sm sm:text-base font-medium"
