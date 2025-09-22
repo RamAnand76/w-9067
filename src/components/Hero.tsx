@@ -1,4 +1,3 @@
-
 import { ArrowRight, Smartphone, MapPin, Clock, MessageSquare } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
@@ -78,17 +77,17 @@ const Hero = () => {
   
   const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
   
-  return <motion.div className="relative mt-16 md:mt-0 w-full mb-8" initial="hidden" animate="visible" variants={containerVariants}>
+  return <motion.div className="relative mt-16 md:mt-0 w-full mb-8 pt-8 md:pt-12" initial="hidden" animate="visible" variants={containerVariants}>
       <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[60vh] sm:h-[70vh] md:h-[750px] w-full">
         <div className="absolute inset-0 w-full">
           <img src="/lovable-uploads/dd0df14a-65e7-44ab-8336-14ccc99d1c98.png" alt="Laundry transformation process" className={`w-full h-full object-cover opacity-20 ${isMobile ? 'object-center' : 'object-center'}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-teal-600/90 via-teal-600/80 to-white dark:to-gray-900"></div>
         </div>
         
-        <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 w-full">
+        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
-              <motion.div className="mb-6 flex justify-center items-end -mt-36" variants={itemVariants}>
+              <motion.div className="mb-6 flex justify-center items-end" variants={itemVariants}>
                 <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-40 sm:max-h-48 drop-shadow-lg" />
                 <div className="relative">
                   <motion.img 
