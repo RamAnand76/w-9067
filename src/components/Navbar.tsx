@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="h-11 w-auto mr-2" />
+              <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="h-16 w-auto -ml-2" />
             </Link>
           </div>
           
