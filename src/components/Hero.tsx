@@ -90,6 +90,14 @@ const Hero = () => {
             <motion.div className="w-full max-w-4xl text-center" variants={itemVariants}>
               <motion.div className="mt-8 mb-6 flex justify-center items-end" variants={itemVariants}>
                 <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-40 sm:max-h-48 drop-shadow-lg" />
+                 <motion.div 
+                  className="hidden md:block relative -ml-4 -mb-4"
+                  variants={scooterVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <img src="/lovable-uploads/Bright-Deliver.png" alt="Scooter" className="h-24 w-auto" />
+                </motion.div>
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
               <motion.div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 justify-center items-center" variants={itemVariants}>
