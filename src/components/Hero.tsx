@@ -52,19 +52,20 @@ const Hero = () => {
   }
 
   const smokeVariants = {
-    hidden: { opacity: 0, scale: 0, x: 0 },
+    hidden: { opacity: 0, scale: 0.5, x: 0 },
     visible: (i: number) => ({
-      opacity: [0, 0.5, 0],
-      scale: [0.5, 1.2, 1.5],
-      x: [10, 30, 50],
+      opacity: [0, 0.4, 0],
+      scale: [0.5, 1, 1.2],
+      x: [0, -10, -20],
       transition: {
-        delay: i * 0.2 + 1,
-        duration: 1.5,
+        delay: i * 0.3 + 1, // Stagger the animation of each puff
+        duration: 2,
         repeat: Infinity,
         ease: "easeOut",
       },
     }),
   };
+
 
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -79,7 +80,7 @@ const Hero = () => {
   const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
   
   return <motion.div className="relative w-full mb-8 pt-16 md:pt-0" initial="hidden" animate="visible" variants={containerVariants}>
-      <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[80vh] sm:h-[90vh] md:h-[750px] w-full">
+      <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[85vh] sm:h-[95vh] md:h-[800px] w-full">
         <div className="absolute inset-0 w-full">
           <img src="/lovable-uploads/dd0df14a-65e7-44ab-8336-14ccc99d1c98.png" alt="Laundry transformation process" className={`w-full h-full object-cover opacity-20 ${isMobile ? 'object-center' : 'object-center'}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-teal-600/90 via-teal-600/80 to-white dark:to-gray-900"></div>
@@ -96,7 +97,23 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                 >
-                  <img src="/lovable-uploads/Bright-Deliver.png" alt="Scooter" className="h-24 w-auto" />
+                  <div className="relative">
+                    <img src="/lovable-uploads/Bright-Deliver.png" alt="Scooter" className="h-24 w-auto relative z-10" />
+                    {/* Smoke Animation */}
+                    <div className="absolute top-1/2 left-0 -translate-y-1/2 -ml-2">
+                      {[0, 1, 2].map(i => (
+                        <motion.div
+                          key={i}
+                          custom={i}
+                          variants={smokeVariants}
+                          className="w-3 h-3 bg-gray-300 rounded-full absolute"
+                          style={{
+                            bottom: `${i * 3}px`
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
                 </motion.div>
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
