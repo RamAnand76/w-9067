@@ -78,9 +78,9 @@ const LaundryFeatures = () => {
               alt="Nearby Laundries" 
               className="w-72 h-72 mx-auto mb-8 object-contain"
             />
-            <h3 className="text-3xl font-bold mb-6 text-teal-600 dark:text-teal-400">Discover Nearby Laundries</h3>
+            <h3 className="text-3xl font-bold mb-6 text-teal-600 dark:text-teal-400">Brighten Your Day with Clean Clothes — Delivered to Your Doorstep</h3>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-              Find trusted local laundries around you with just a tap. Compare services, read reviews, and choose the best option for your needs.
+              
             </p>
           </motion.div>
         </div>
