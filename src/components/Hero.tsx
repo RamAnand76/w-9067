@@ -96,7 +96,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                 >
-                  <img src="/lovable-uploads/Bright-Deliver.png" alt="Scooter" className="h-28 w-auto" />
+                  <img src="/lovable-uploads/Bright-Deliver.png" alt="Scooter" className="h-24 w-auto" />
                 </motion.div>
               </motion.div>
               <motion.h1 className="text-white text-3xl md:text-4xl font-bold mb-4 capitalize" variants={itemVariants}>revolutionizing the laundry industry with a smart, connected platform</motion.h1>
