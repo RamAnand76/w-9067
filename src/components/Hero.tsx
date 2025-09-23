@@ -100,7 +100,7 @@ const Hero = () => {
                   <div className="relative">
                     <img src="/lovable-uploads/Bright-Deliver.png" alt="Scooter" className="h-24 w-auto relative z-10" />
                     {/* Smoke Animation */}
-                    <div className="absolute top-2/3 right-0 -translate-y-1/2 -mr-2">
+                    <div className="absolute top-2/3 right-0 -translate-y-1/2">
                       {[0, 1, 2].map(i => (
                         <motion.div
                           key={i}
