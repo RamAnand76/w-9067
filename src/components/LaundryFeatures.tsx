@@ -74,11 +74,11 @@ const LaundryFeatures = () => {
             className="bg-gradient-to-br from-teal-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 p-10 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-600 max-w-4xl mx-auto"
           >
             <img 
-              src="/lovable-uploads/7c4a98c7-4e64-4a11-9910-457955260571.png" 
+              src="/lovable-uploads/Brightenyour_day.png" 
               alt="Nearby Laundries" 
-              className="w-72 h-72 mx-auto mb-8 object-contain"
+              className="w-80 h-80 mx-auto mb-8 object-contain"
             />
-            <h3 className="text-3xl font-bold mb-6 text-teal-600 dark:text-teal-400">Brighten Your Day with Clean Clothes — Delivered to Your Doorstep</h3>
+            <h3 className="text-4xl font-bold mb-6 text-teal-600 dark:text-teal-400 [text-shadow:_1px_1px_2px_rgb(0_0_0_/_10%)]">Brighten Your Day with Clean Clothes — Delivered to Your Doorstep</h3>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
               
             </p>
