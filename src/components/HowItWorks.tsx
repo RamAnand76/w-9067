@@ -67,9 +67,7 @@ const HowItWorks = () => {
             className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-xl max-w-3xl mx-auto"
           >
             <h3 className="text-lg font-semibold mb-2 text-teal-800 dark:text-teal-300">Every Problem Has One Solution – GoBright</h3>
-            <p className="text-teal-700 dark:text-teal-400">
-              We are transforming an inefficient laundry system into a smart, seamless, and efficient service with our innovative laundry app!
-            </p>
+            
           </motion.div>
         </div>
 
