@@ -80,7 +80,7 @@ const Hero = () => {
   const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
   
   return <motion.div className="relative w-full mb-8 pt-16 md:pt-0" initial="hidden" animate="visible" variants={containerVariants}>
-      <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[115vh] sm:h-[118vh] md:h-[800px] w-full">
+      <div className="banner-container bg-gradient-to-br from-teal-600 to-teal-700 dark:from-teal-700 dark:to-teal-800 relative overflow-hidden h-[100vh] sm:h-[100vh] md:h-[800px] w-full">
         <div className="absolute inset-0 w-full">
           <img src="/lovable-uploads/dd0df14a-65e7-44ab-8336-14ccc99d1c98.png" alt="Laundry transformation process" className={`w-full h-full object-cover opacity-20 ${isMobile ? 'object-center' : 'object-center'}`} />
           <div className="absolute inset-0 bg-gradient-to-b from-teal-600/90 via-teal-600/80 to-white dark:to-gray-900"></div>
