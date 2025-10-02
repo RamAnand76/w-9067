@@ -80,7 +80,7 @@ const LaundryFeatures = () => {
             />
             <h3 className="text-4xl font-bold mb-6 text-teal-600 dark:text-teal-400 [text-shadow:_1px_1px_2px_rgb(0_0_0_/_10%)]">Brighten Your Day with Clean Clothes — Delivered to Your Doorstep</h3>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
-              
+              We are transforming an inefficient laundry system into a smart, seamless, and efficient service with our innovative laundry app!
             </p>
           </motion.div>
         </div>
