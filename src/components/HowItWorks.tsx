@@ -40,7 +40,7 @@ const HowItWorks = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">How GoBright Works</h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Your Gateway to Trusted Local Laundries - Making laundry as easy as ordering food
+            Your Gateway to Trusted Local Laundries
           </p>
         </div>
         
