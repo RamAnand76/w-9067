@@ -86,7 +86,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-teal-600/90 via-teal-600/80 to-white dark:to-gray-900"></div>
         </div>
         
-        <div className="banner-overlay bg-transparent pt-20 sm:pt-24 md:pt-32 pb-20 sm:pb-24 md:pb-32 w-full">
+        <div className="banner-overlay bg-transparent pt-16 sm:pt-20 md:pt-24 pb-20 sm:pb-24 md:pb-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-10 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center transform -translate-y-8 md:-translate-y-2" variants={itemVariants}>
               <motion.div className="mt-4 mb-6 flex justify-center items-center" variants={itemVariants}>
