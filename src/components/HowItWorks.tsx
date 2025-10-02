@@ -66,7 +66,7 @@ const HowItWorks = () => {
             viewport={{ once: true }}
             className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-xl max-w-3xl mx-auto"
           >
-            <h3 className="text-lg font-semibold mb-2 text-teal-800 dark:text-teal-300">Every Problem Has One Solution – GoBright</h3>
+            <h3 className="text-lg font-semibold mb-2 text-teal-800 dark:text-teal-300">Every Problem Has One Solution – <span className="font-bold text-teal-600 dark:text-teal-200">GoBright</span></h3>
             
           </motion.div>
         </div>
