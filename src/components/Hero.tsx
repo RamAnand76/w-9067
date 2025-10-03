@@ -1,8 +1,8 @@
-
-import { ArrowRight, Smartphone, MapPin, Clock, MessageSquare } from "lucide-react";
+import { ArrowRight, Smartphone, MapPin, Clock } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Hero = () => {
   const isMobile = useIsMobile();
@@ -141,7 +141,7 @@ const Hero = () => {
                   className="w-full sm:w-auto min-h-[44px] px-6 sm:px-8 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition-all shadow-lg hover:shadow-xl hover:shadow-green-300/20 flex items-center justify-center group text-sm sm:text-base font-medium"
                 >
                   Request a Service
-                  <MessageSquare className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
+                  <FaWhatsapp className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform" />
                 </a>
 
                 <button 

@@ -1,11 +1,11 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import { DarkModeToggle } from "@/components/DarkModeToggle";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -119,8 +119,9 @@ const Navbar = () => {
             About Us
           </Link>
 
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={cn("block w-full text-left px-3 py-2 rounded-md", "bg-teal-600 text-white hover:bg-teal-700")}>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={cn("flex items-center w-full text-left px-3 py-2 rounded-md", "bg-teal-600 text-white hover:bg-teal-700")}>
             Request a Service
+            <FaWhatsapp className="ml-2" />
           </a>
           
           <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" : "text-white bg-gray-700 hover:bg-gray-600")}>

@@ -1,8 +1,8 @@
-
-import { Search, GitCompare, Calendar, Truck, Phone } from "lucide-react";
+import { Search, GitCompare, Calendar, Truck } from "lucide-react";
 import { motion } from "framer-motion";
 import BackgroundOverlayCard from "@/components/ui/background-overlay-card";
 import { Button } from "./ui/button";
+import { FaWhatsapp } from "react-icons/fa";
 
 const steps = [
   {
@@ -78,7 +78,7 @@ const HowItWorks = () => {
                 rel="noopener noreferrer"
             >
                 <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all">
-                    <Phone className="w-5 h-5 mr-2" />
+                    <FaWhatsapp className="w-5 h-5 mr-2" />
                     Request a Service
                 </Button>
             </a>
