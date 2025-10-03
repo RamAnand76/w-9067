@@ -32,7 +32,7 @@ const steps = [
 ];
 
 const HowItWorks = () => {
-  const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
+  const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
 
   return (
     <section id="how-it-works" className="py-16 bg-gray-50 dark:bg-gray-900">
