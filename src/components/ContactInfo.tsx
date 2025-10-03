@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactInfo = () => {
   return (
@@ -33,7 +34,7 @@ const ContactInfo = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
-            <Phone className="w-5 h-5" />
+            <FaWhatsapp className="w-5 h-5" />
             WhatsApp Us
           </a>
         </div>
