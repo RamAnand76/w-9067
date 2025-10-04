@@ -93,7 +93,7 @@ const Hero = () => {
               <motion.div className="mt-4 mb-6 relative flex justify-center items-center" variants={itemVariants}>
                 <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-52 sm:max-h-60 drop-shadow-lg" />
                  <motion.div 
-                  className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2"
+                  className="hidden md:block absolute right-[-3rem] top-[40%] -translate-y-1/2"
                   variants={scooterVariants}
                   initial="hidden"
                   animate="visible"
