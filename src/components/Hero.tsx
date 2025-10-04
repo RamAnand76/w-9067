@@ -1,3 +1,4 @@
+
 import { ArrowRight, Smartphone, MapPin, Clock } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { motion } from "framer-motion";
