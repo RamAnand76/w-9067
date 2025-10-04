@@ -90,10 +90,10 @@ const Hero = () => {
         <div className="banner-overlay bg-transparent pt-0 sm:pt-20 md:pt-24 pb-20 sm:pb-24 md:pb-32 w-full">
           <div className="w-full mx-auto px-4 sm:px-10 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center transform -translate-y-8 md:-translate-y-2" variants={itemVariants}>
-              <motion.div className="mt-4 mb-6 flex justify-center items-center" variants={itemVariants}>
+              <motion.div className="mt-4 mb-6 relative flex justify-center items-center" variants={itemVariants}>
                 <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-52 sm:max-h-60 drop-shadow-lg" />
                  <motion.div 
-                  className="hidden md:block relative"
+                  className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2"
                   variants={scooterVariants}
                   initial="hidden"
                   animate="visible"
@@ -204,3 +204,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+    
