@@ -37,7 +37,7 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
   
-  const whatsappUrl = "https://wa.me/919496763260?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
+  const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
 
   return (
     <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm" : "bg-black dark:bg-black")} initial={{
