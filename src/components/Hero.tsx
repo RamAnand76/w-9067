@@ -91,7 +91,7 @@ const Hero = () => {
           <div className="w-full mx-auto px-4 sm:px-10 lg:px-8 flex flex-col items-center justify-center h-full">
             <motion.div className="w-full max-w-4xl text-center transform -translate-y-8 md:-translate-y-2" variants={itemVariants}>
               <motion.div className="mt-4 mb-6 relative flex justify-center items-center" variants={itemVariants}>
-                <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-52 sm:max-h-60 drop-shadow-lg" />
+                <img src="/lovable-uploads/go-bright-Header-logo.png" alt="GoBright Logo" className="w-auto h-auto max-h-52 sm:max-h-72 drop-shadow-lg" />
                  <motion.div 
                   className="hidden md:block absolute right-[-3rem] top-[35%] -translate-y-1/2"
                   variants={scooterVariants}
