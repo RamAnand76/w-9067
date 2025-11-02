@@ -30,7 +30,7 @@ const SEO: React.FC<SEOProps> = ({
   isBlogPost = false
 }) => {
   const location = useLocation();
-  const productionDomain = 'https://gobright.app';
+  const productionDomain = 'https://gobright.co.in';
   const currentUrl = `${productionDomain}${location.pathname}`;
   const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `${productionDomain}${imageUrl}`;
 
