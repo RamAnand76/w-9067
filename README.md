@@ -48,14 +48,3 @@ You'll need to have [Node.js](https://nodejs.org/en/) and npm (which comes with 
     ```
     This will start the development server, usually on `http://localhost:8080`. You can now view the application in your browser.
 
-## Editing with Lovable
-
-You can also edit this project conversationally using Lovable. Simply visit the project link below and start prompting:
-
-[**Edit on Lovable**](https://lovable.dev/projects/ec1d4f1e-2506-4da5-a91b-34afa90cceb6)
-
-Changes made via Lovable will be automatically committed to this repository.
-
-## Deployment
-
-You can easily deploy this project using Lovable. Open the project dashboard and navigate to **Share -> Publish**.
