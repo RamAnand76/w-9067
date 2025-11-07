@@ -34,23 +34,46 @@ const SEO: React.FC<SEOProps> = ({
   const currentUrl = `${productionDomain}${location.pathname}`;
   const absoluteImageUrl = imageUrl.startsWith('http') ? imageUrl : `${productionDomain}${imageUrl}`;
 
-  // Vercel provides this environment variable. It's 'production' for the main site, 
-  // and 'preview' for preview deployments.
-  const isProduction = import.meta.env.VITE_VERCEL_ENV === 'production';
-
   // Create base Organization JSON-LD structured data
   const organizationStructuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'LocalBusiness',
+    '@id': productionDomain,
     name: 'GoBright',
     url: productionDomain,
     logo: `${productionDomain}/lovable-uploads/go-bright-Header-logo.png`,
     description: 'India\'s first fully app-based laundry service, connecting users with trusted local laundries.',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'customer service',
-      email: 'gobright.co.in@gmail.com',
-      telephone: '+91-9496763260'
+    telephone: '+91-9496763260',
+    email: 'gobright.co.in@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'CC 54, 2593-5, Bose Nagar, Kadavanthra',
+      addressLocality: 'Kochi',
+      addressRegion: 'Kerala',
+      postalCode: '682020',
+      addressCountry: 'IN'
+    },
+    image: absoluteImageUrl,
+    priceRange: '₹₹',
+    openingHoursSpecification: [
+        {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: [
+                'Monday',
+                'Tuesday',
+                'Wednesday',
+                'Thursday',
+                'Friday',
+                'Saturday',
+                'Sunday'
+            ],
+            opens: '09:00',
+            closes: '21:00'
+        }
+    ],
+    areaServed: {
+        '@type': 'City',
+        name: 'Kochi'
     },
     sameAs: [
       'https://www.linkedin.com/company/gobright-india/',
@@ -110,12 +133,7 @@ const SEO: React.FC<SEOProps> = ({
       <link rel="canonical" href={currentUrl} />
       <meta name="keywords" content={keywordString} />
       
-      {/* ROBOTS TAG: This is the key change. */}
-      {isProduction ? (
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      ) : (
-        <meta name="robots" content="noindex, nofollow" />
-      )}
+      <meta name="robots" content="index, follow" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={isBlogPost ? 'article' : type} />

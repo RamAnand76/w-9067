@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
       host: "::",
       port: 8080,
     },
+    appType: 'spa', // Ensure SPA mode for routing
     plugins: [
       react(),
       mode === 'development' &&
