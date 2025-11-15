@@ -1,3 +1,4 @@
+
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -10,7 +11,7 @@ const PrivacyPolicy = () => {
   }, []);
   return (
     <PageLayout>
-      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-background text-foreground">
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <Link
@@ -231,3 +232,5 @@ const PrivacyPolicy = () => {
   );
 };
 export default PrivacyPolicy;
+
+    
