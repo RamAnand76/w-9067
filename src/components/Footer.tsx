@@ -1,5 +1,6 @@
 
 import { Linkedin, Instagram, Facebook } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -69,7 +70,7 @@ const Footer = () => {
             © {new Date().getFullYear()} GoBright. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+            <Link to="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
             <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
