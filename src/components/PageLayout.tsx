@@ -20,7 +20,7 @@ const PageLayout = ({ children, showContact = true }: PageLayoutProps) => {
   }, [location]);
 
   return (
-    <div className="min-h-screen bg-white w-full max-w-[100vw] overflow-x-hidden">
+    <div className="min-h-screen bg-white dark:bg-gray-900 w-full max-w-[100vw] overflow-x-hidden">
       <Navbar />
       {children}
       {showContact && <ContactInfo />}
