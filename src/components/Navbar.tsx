@@ -8,20 +8,7 @@ import { DarkModeToggle } from "@/components/DarkModeToggle";
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,7 +27,7 @@ const Navbar = () => {
   const whatsappUrl = "https://wa.me/919656536327?text=Hi%20there!%20I%20want%20to%20inquire%20about%20your%20services";
 
   return (
-    <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm" : "bg-black dark:bg-black")} initial={{
+    <motion.nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full", "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm")} initial={{
       opacity: 1,
       y: 0
     }} animate={{
@@ -57,11 +44,11 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            <NavigationMenu className={cn(isScrolled ? "" : "text-white")}>
+            <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <Link to="/">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800")}>
                       Home
                     </NavigationMenuLink>
                   </Link>
@@ -69,7 +56,7 @@ const Navbar = () => {
                 
                 <NavigationMenuItem>
                   <Link to="/about">
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), isScrolled ? "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800" : "text-gray-100 hover:text-white bg-transparent hover:bg-gray-800")}>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-gray-700 hover:text-gray-900 dark:text-gray-200 dark:hover:text-white bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800")}>
                       About Us
                     </NavigationMenuLink>
                   </Link>
@@ -82,7 +69,7 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", isScrolled ? "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600" : "bg-gray-700 text-white hover:bg-gray-600")}>
+                  <button onClick={() => scrollToSection('contact')} className={cn("px-4 py-2 rounded-md transition-colors", "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600")}>
                     Contact Us
                   </button>
                 </NavigationMenuItem>
@@ -95,7 +82,7 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
             <DarkModeToggle />
-            <button onClick={toggleMenu} className={cn("focus:outline-none", isScrolled ? "text-gray-700 dark:text-gray-200" : "text-white")}>
+            <button onClick={toggleMenu} className={cn("focus:outline-none", "text-gray-700 dark:text-gray-200")}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -104,15 +91,15 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div className={cn("md:hidden transition-all duration-300 overflow-hidden w-full", isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0")}>
-        <div className={cn("px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-sm", isScrolled ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm" : "bg-black dark:bg-black")}>
-          <Link to="/" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+        <div className={cn("px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-sm", "bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm")}>
+          <Link to="/" className={cn("block px-3 py-2 rounded-md", "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
             Home
           </Link>
           
-          <Link to="/about" className={cn("block px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800" : "text-gray-200 hover:bg-gray-900")} onClick={() => {
+          <Link to="/about" className={cn("block px-3 py-2 rounded-md", "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800")} onClick={() => {
             setIsMenuOpen(false);
             window.scrollTo(0, 0);
           }}>
@@ -124,7 +111,7 @@ const Navbar = () => {
             <FaWhatsapp className="ml-2" />
           </a>
           
-          <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-2 rounded-md", isScrolled ? "text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600" : "text-white bg-gray-700 hover:bg-gray-600")}>
+          <button onClick={() => scrollToSection('contact')} className={cn("block w-full text-left px-3 py-2 rounded-md", "text-gray-700 dark:text-gray-200 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600")}>
             Contact Us
           </button>
         </div>
